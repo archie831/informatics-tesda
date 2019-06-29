@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body{
     font-size: 16px;
     background-color:#252525;
@@ -18,13 +17,13 @@ body{
 
 .nav-item .nav-link{
     font-size: 1.5rem !important;
-    
+
 }
 
 .nav-link{
     border-color: white;
     border: 0px 1px 0px 0px;
-    
+
 }
 
 a:link, a:visited{
@@ -72,53 +71,4 @@ a:hover, a:active, .active .nav-link{
     border-color: #b3291a;
     background-color: #b3291a;
     color: white !important;
-}
-=======
-body{
-    background-color: #252525;
-    color: white;
-    font-size: 16px;
-}
-
-h1{
-    color: #e74c3c;
-}
-
-.col-sm-3{
-    background-color: whitesmoke;
-}
-
-
-
-
-/********* CONTENT *********/
-
-.card-title{
-    color: #252525;
-}
-
-.card-text{
-    color: red;
-}
-
-.btn-primary{
-    background-color:#e74c3c;
-}
-
-.btn-primary:link, .btn-primary:visited{
-    border-color: #e74c3c;
-    background-color:#e74c3c;
-}
-
-.btn-primary:hover, .btn-primary:active{
-    border-color: #b3291a;
-    background-color: #b3291a;
-}
-
-
-/********* FOOTER *********/
-
-.footer{
-    margin: 15px;
-}
->>>>>>> 2a3546cdaa36aedb4de5898de89ca48849e48318
+} 
