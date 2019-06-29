@@ -1,0 +1,74 @@
+body{
+    font-size: 16px;
+    background-color:#252525;
+}
+
+/************ HEADER ************/
+
+.navbar-brand{
+    color: #e74c3c !important;
+    font-size: 2.5rem;
+}
+
+.navbar{
+    border-radius: 3px;
+    background-color:#252525 !important;
+}
+
+.nav-item .nav-link{
+    font-size: 1.5rem !important;
+    
+}
+
+.nav-link{
+    border-color: white;
+    border: 0px 1px 0px 0px;
+    
+}
+
+a:link, a:visited{
+    color: white !important;
+}
+
+a:hover, a:active, .active .nav-link{
+    color: #e74c3c !important;
+}
+
+.btn-outline-success{
+    color: #e74c3c;
+    border-color: #e74c3c;
+}
+
+.btn-outline-success:hover{
+    color: white;
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+}
+
+/************ CONTENT ************/
+
+.row{margin-bottom: 45px;}
+.one{margin-top: 89px;}
+.six{margin-top: 30px;}
+.eight{margin-top: 33px;}
+.nine{margin-top: 3px;}
+.two, .seven, .col-sm-3, .col{padding-top: 0px;}
+
+.card-text{
+    color: red;
+}
+
+.btn-primary{
+    background-color:#e74c3c;
+}
+
+.btn-primary:link, .btn-primary:visited{
+    border-color: #e74c3c;
+    background-color:#e74c3c;
+}
+
+.btn-primary:hover, .btn-primary:active{
+    border-color: #b3291a;
+    background-color: #b3291a;
+    color: white !important;
+}
