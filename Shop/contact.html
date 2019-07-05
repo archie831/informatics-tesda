@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Shop</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+        <script>
+            window.addEventListener("load", function(){
+                window.cookieconsent.initialise({
+                "palette": {"popup": {"background": "#000"},"button": {"background": "#f1d600"}}
+        })});
+    </script>
+</head>
+<body>
+	<div class="container">
+		<div class="row navRow">
+			<div class="col">
+				<nav class="navbar navbar-expand-xl navbar-light bg-light">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+					<div class="navbar-toggler-icon"></div>
+					</button>
+					<h1 class="navbar-brand" href="#">Motorcycle Shop</h1>
+
+					<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+					<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+						<li class="nav-item">
+								<a class="nav-link"  href="index.html">HOME</a>
+							</li>
+						<li class="nav-item navLine">
+							<span class="border border-white"></span>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="shop.html">SHOP</a>
+						</li>
+						<li class="nav-item navLine">
+							<span class="border border-white"></span>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="contact.html">CONTACT<div class="sr-only">(current)</div></a>
+						</li>
+					</ul>
+					<form class="form-inline my-2 my-lg-0">
+						<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+					</form>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+		<div class="row contact-page-img">
+			<div class="contactImg">
+				<h1>Where you can find us</h1>
+			</div>
+		</div>
+		<div class="row contact-con">
+			<div class="col contactForm">
+				<h2 class="contactForm-header">Contact us</h2>
+				<form action="" method="post">
+					<div class="form-group">
+						<label for="name">Name:</label>
+						<input type="text" class="form-control" id="name" placeholder="Enter complete name" name="name" required>
+					</div>
+					<div class="form-group">
+						<label for="email">Email address:</label>
+						<input type="email" class="form-control" id="email" placeholder="Enter email address" name="email" required>
+					</div>
+					<div class="form-group">
+						<label for="tel">Phone number:</label>
+						<input type="tel" class="form-control" id="tel" placeholder="Enter phone number" name="tel" required>
+					</div>
+					<div class="form-group">
+							<label for="message">Message:</label>
+							<textarea class="form-control" rows="4" id="message" placeholder="Enter your message here" name="message"></textarea>
+						  </div>
+					<button type="submit" class="btn btn-primary" name="submit">Submit</button>
+				</form>
+			</div>
+			<div class="col contact-info">
+				<div class="contact-info-right">
+					<h2 class="contactForm-header">Get in touch</h2>
+					<div class="footer-icons">
+						<i class="material-icons contact-info-icons">local_phone</i>
+						<div>Customer Service Hotline number (Open 24/7)</div><br>
+						<div class="contact-info-bottom contact-info-left">(032)888-9918</div>
+					</div>
+					<div class="footer-icons">
+						<i class="material-icons contact-info-icons">place</i>
+						<div>Canduman Mandaue City, Cebu</div>
+					</div>
+					<div class="footer-icons">
+						<i class="material-icons contact-info-icons">local_post_office</i>
+						<div>Email: contact@archiebaclay.com</div>
+					</div>
+					<div>
+						<h2 class="contactForm-header office-hours" >Office hours</h2>
+						<div>Monday to Friday: 8am - 6pm</div>
+						<div>Saturday to Sunday: 9am - 3pm</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row office-location-row">
+			<h2 class="office-location contactForm-header">Office location</h2>
+			<div class="google-map">
+				<iframe class="google-map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.687175755898!2d123.9328902142842!3d10.366878269455308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9987ec4e6c69b%3A0xbc5c2ba394db4da1!2sCanduman!5e0!3m2!1sfil!2sph!4v1562303243724!5m2!1sfil!2sph" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</div>
+
+		<div class="row footer">
+				<div class="col-sm-4 footer-col" >
+					<h2 class="footer-title">Motorcycle Shop</h2>
+					<p>Lorem ipsum dolor sit ametr consectetur adpscing eiusnpor incpun labore dolore magna the alquenim veniam quisnstru rcation ullamo alboris conseqrua autirure in velit esscillum.</p><br>
+					<div class="footer-icons">
+						<i class="material-icons">place</i>
+						<div>Canduman Mandaue City, Cebu</div>
+					</div>
+
+					<div class="footer-icons">
+						<i class="material-icons">local_post_office</i>
+						<div><a href="mailto:contact@archiebaclay.com" class="email-footer">Email: contact@archiebaclay.com</a></div>
+					</div>
+
+					<div class="footer-icons">
+						<i class="material-icons">local_phone</i>
+						<div><a href="tel:888-9918" class="phone-footer">Phone: (032)888-9918</a></div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 footer-col">
+						<p class="footer-title"><strong>DELIVERY NATIONWIDE</strong></p>
+					<div class="d-flex flex-row">
+						<div class="p-2">
+							<i class="material-icons boat" style="font-size: 50px">directions_boat</i>
+						</div>
+						<div class="p-2">
+							We deliver nationwide via 2go Shipping lines.
+						</div>
+					</div><br>
+
+					<div>
+						<p class="footer-title"><strong>RETURN POLICY</strong></p>
+						<div class="d-flex flex-row">
+								<div class="p-2">
+									<i class='fas fa-motorcycle' style="font-size: 50px"></i>
+								</div>
+								<div class="p-2">We have 30 days money back guarantee and a 1 year warranty.</div>
+							</div>
+					</div><br>
+
+					<div>
+						<p class="footer-title"><strong>24/7 SUPPORT</strong></p>
+						<div class="d-flex flex-row">
+							<div class="p-2">
+								<i class="material-icons"  style="font-size: 50px">local_phone</i>
+							</div>
+							<div class="p-2">
+								You can contact our customer service hotline 24/7.
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<div class="col-sm-4 footer-col">
+				<div>
+					<p class="footer-title"><strong>FOLLOW US</strong></p>
+					<a href="#" class="social-icon"><i class="fa fa-google-plus"></i></a>
+					<a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
+					<a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
+					<a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+				</div><br><br>
+
+				<div class="payment-con">
+					<p class="footer-title"><strong>WE ACCEPT</strong></p>
+					<div>We accept the payment methods below:</div>
+					<img src="https://www.archiebaclay.com/onewebstatic/Mastercard-Curved.png" alt="Master Card">
+					<img src="https://www.archiebaclay.com/onewebstatic/Visa-Curved.png" alt="Visa">
+					<img src="https://www.archiebaclay.com/onewebstatic/Paypal-Curved.png" alt="Paypal">
+					<img src="https://www.archiebaclay.com/onewebstatic/Maestro-Curved.png" alt="Maestro">
+					<img src="https://www.archiebaclay.com/onewebstatic/Western-Union-Curved.png" alt="Western Union">
+				</div><br><br>
+			</div>
+		</div>
+	</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

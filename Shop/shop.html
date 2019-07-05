@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Shop</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+        <script>
+            window.addEventListener("load", function(){
+                window.cookieconsent.initialise({
+                "palette": {"popup": {"background": "#000"},"button": {"background": "#f1d600"}}
+        })});
+    </script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row navRow">
+				<div class="col">
+					<nav class="navbar navbar-expand-xl navbar-light bg-light">
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+						<div class="navbar-toggler-icon"></div>
+						</button>
+						<h1 class="navbar-brand" href="#">Motorcycle Shop</h1>
+
+						<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+						<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">HOME</a>
+							</li>
+							<li class="nav-item navLine">
+								<span class="border border-white"></span>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link" href="#">SHOP<div class="sr-only">(current)</div></a>
+							</li>
+							<li class="nav-item navLine">
+								<span class="border border-white"></span>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link"  href="contact.html">CONTACT</a>
+							</li>
+						</ul>
+						<form class="form-inline my-2 my-lg-0">
+							<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+							<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+						</form>
+						</div>
+					</nav>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-5 offset-sm-7 cartCol">
+					<div class="d-flex flex-row justify-content-end">
+						<div class="p-2">
+							<div class="cartText">Your cart</div>
+						</div>
+						<div class="p-2">
+						
+							<div id="ex4">
+								<span id="cartNum" class="p1 fa-stack fa-2x has-badge" data-count="0">
+									<!-- Cart Button trigger modal -->
+									<a id="btn-cart" href="#" data-toggle="modal" data-target="#cart-modal-center">
+										<i class="p3 fa fa-shopping-cart fa-stack-1x xfa-inverse" data-count="4b"></i>
+									</a>
+
+									<!-- Cart Modal -->
+									<div class="modal fade" id="cart-modal-center" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+										<div class="modal-dialog modal-dialog-centered" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+												<h5 class="modal-title" id="exampleModalLongTitle">Your cart</h5>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+												</div>
+												<div class="modal-body">
+													<div id="show-local-storage"></div>
+													<div id="show-scount"></div>
+													<div id="show-crf"></div>
+													<div id="show-g400c"></div>
+													<div id="show-ghost"></div>
+													<div id="show-mesarati"></div>
+													<div id="show-kawasaki"></div>
+													<div id="show-pico"></div>
+													<div id="show-yamaha"></div>
+													<div id="show-cbr"></div>
+													<div id="show-total"></div>
+												</div>
+												<div class="modal-footer">
+												<button id="clearStorage" type="button" class="btn btn-secondary" data-dismiss="modal"><i class="material-icons reset-order">delete</i>Reset Order</button>	
+												<button id="btn-buyNow" type="button" class="btn btn-primary"><i class='fas fa-shopping-cart'></i>Buy now</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="card">
+							<img src="scout-sixty-thunder-black-titanium-metallic.jpg" class="card-img-top oneCardImg" class="img-fluid" alt="Scount Sixty Thunder">
+							<div class="card-body oneCardBody mx-auto">
+								<h5 class="card-title">Scount Sixty Thunder</h5>
+								<p class="card-text">Php 99, 999</p>
+								<!-- Button trigger modal -->
+								<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#scout-modal-center">View Details</a>
+							</div>
+
+							<!-- Modal -->
+							<div class="modal fade" id="scout-modal-center" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLongTitle">Scount Sixty Thunder</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+									</div>
+									<div class="modal-body">
+										<p><strong>Price:</strong><span class="spanModal">Php 99,99</span></p>
+
+										<p><strong>Details:</strong><br>
+											Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe accusamus mollitia laborum sit dolor repellendus! Corporis quidem asperiores velit placeat eos, maxime ratione. Cum explicabo aperiam recusandae. Officiis, voluptatum soluta!
+										</p>
+									</div>
+									<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+									<button id="btn-scount" type="button" class="btn btn-primary" ><i class='fas fa-shopping-cart'></i>Add to cart</button>
+									</div>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="card">
+							<img src="CRF-150L-500x500.jpg" class="card-img-top twoCardImg" class="img-fluid" alt="...">
+							<div class="card-body twoCardBody mx-auto">
+								<h5 class="card-title">CRF</h5>
+								<p class="card-text">Php 99, 999</p>
+								<!-- Button trigger modal -->
+								<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#crf-modal-center">View Details</a>
+
+							<!-- Modal -->
+							<div class="modal fade" id="crf-modal-center" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLongTitle">CRF</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+										</div>
+										<div class="modal-body">
+											<p><strong>Price:</strong><span class="spanModal">Php 99,99</span></p>
+	
+											<p><strong>Details:</strong><br>
+												Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe accusamus mollitia laborum sit dolor repellendus! Corporis quidem asperiores velit placeat eos, maxime ratione. Cum explicabo aperiam recusandae. Officiis, voluptatum soluta!
+											</p>
+										</div>
+										<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+										<button id="btn-crf" type="button" class="btn btn-primary"><i class='fas fa-shopping-cart'></i>Add to cart</button>
+										</div>
+									</div>
+									</div>
+								</div>								
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="card">
+							<img src="g400c-black-main.jpg" class="card-img-top threeCardImg" class="img-fluid" alt="...">
+							<div class="card-body threeCardBody mx-auto">
+								<h5 class="card-title">G400C</h5>
+								<p class="card-text">Php 99, 999</p>
+								<!-- Button trigger modal -->
+								<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#g400c-modal-center">View Details</a>
+
+							<!-- Modal -->
+							<div class="modal fade" id="g400c-modal-center" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLongTitle">G400C</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+										</div>
+										<div class="modal-body">
+											<p><strong>Price:</strong><span class="spanModal">Php 99,99</span></p>
+	
+											<p><strong>Details:</strong><br>
+												Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe accusamus mollitia laborum sit dolor repellendus! Corporis quidem asperiores velit placeat eos, maxime ratione. Cum explicabo aperiam recusandae. Officiis, voluptatum soluta!
+											</p>
+										</div>
+										<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+										<button id="btn-g400c" type="button" class="btn btn-primary"><i class='fas fa-shopping-cart'></i>Add to cart</button>
+										</div>
+									</div>
+									</div>
+								</div>								
+							</div>
+						</div>
+					</div>
+				</div>	
+
+				<div class="row">	
+					<div class="col-sm-4">
+						<div class="card">
+							<img src="istockphoto-452794623-612x612.jpg" class="card-img-top fourCardImg" class="img-fluid" alt="...">
+							<div class="card-body mx-auto">
+								<h5 class="card-title">Ghost Rider</h5>
+								<p class="card-text">Php 99, 999</p>
+								<!-- Button trigger modal -->
+								<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#ghost-modal-center">View Details</a>
+
+								<!-- Modal -->
+								<div class="modal fade" id="ghost-modal-center" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">Ghost Rider</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+											</div>
+											<div class="modal-body">
+												<p><strong>Price:</strong><span class="spanModal">Php 99,99</span></p>
+		
+												<p><strong>Details:</strong><br>
+													Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe accusamus mollitia laborum sit dolor repellendus! Corporis quidem asperiores velit placeat eos, maxime ratione. Cum explicabo aperiam recusandae. Officiis, voluptatum soluta!
+												</p>
+											</div>
+											<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+											<button id="btn-ghost" type="button" class="btn btn-primary"><i class='fas fa-shopping-cart'></i>Add to cart</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="card">
+							<img src="maserati-powered-motorcycle-0001.jpg" class="card-img-top" class="img-fluid" alt="...">
+							<div class="card-body fiveCardBody mx-auto">
+								<h5 class="card-title">Maserati</h5>
+								<p class="card-text">Php 99, 999</p>
+								<!-- Button trigger modal -->
+								<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#mesarati-modal-center">View Details</a>
+
+								<!-- Modal -->
+								<div class="modal fade" id="mesarati-modal-center" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">Mesarati</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+											</div>
+											<div class="modal-body">
+												<p><strong>Price:</strong><span class="spanModal">Php 99,99</span></p>
+		
+												<p><strong>Details:</strong><br>
+													Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe accusamus mollitia laborum sit dolor repellendus! Corporis quidem asperiores velit placeat eos, maxime ratione. Cum explicabo aperiam recusandae. Officiis, voluptatum soluta!
+												</p>
+											</div>
+											<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+											<button id="btn-mesarati" type="button" class="btn btn-primary"><i class='fas fa-shopping-cart'></i>Add to cart</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="card">
+							<img src="7 Kawasaki Ninja H2 SX.jpg" class="card-img-top sixCardImg" class="img-fluid" alt="...">
+							<div class="card-body mx-auto">
+								<h5 class="card-title">Kawasaki Ninja</h5>
+								<p class="card-text">Php 99, 999</p>
+								<!-- Button trigger modal -->
+								<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#kawasaki-modal-center">View Details</a>
+
+								<!-- Modal -->
+								<div class="modal fade" id="kawasaki-modal-center" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">Kawasaki Ninja</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+											</div>
+											<div class="modal-body">
+												<p><strong>Price:</strong><span class="spanModal">Php 99,99</span></p>
+		
+												<p><strong>Details:</strong><br>
+													Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe accusamus mollitia laborum sit dolor repellendus! Corporis quidem asperiores velit placeat eos, maxime ratione. Cum explicabo aperiam recusandae. Officiis, voluptatum soluta!
+												</p>
+											</div>
+											<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+											<button id="btn-kawasaki" type="button" class="btn btn-primary"><i class='fas fa-shopping-cart'></i>Add to cart</button>
+											</div>
+										</div>
+									</div>
+								</div>								
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="card">
+							<img src="Pic0-_Mustang_Distress_Brown_-_2016_Softail_Slim_1024x1024.jpg" class="card-img-top" class="img-fluid" alt="...">
+							<div class="card-body seven mx-auto">
+								<h5 class="card-title">Pico Mustang Distress</h5>
+								<p class="card-text">Php 99, 999</p>
+								<!-- Button trigger modal -->
+								<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#pico-modal-center">View Details</a>
+
+								<!-- Modal -->
+								<div class="modal fade" id="pico-modal-center" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">Pico Mustang Distress</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+											</div>
+											<div class="modal-body">
+												<p><strong>Price:</strong><span class="spanModal">Php 99,99</span></p>
+		
+												<p><strong>Details:</strong><br>
+													Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe accusamus mollitia laborum sit dolor repellendus! Corporis quidem asperiores velit placeat eos, maxime ratione. Cum explicabo aperiam recusandae. Officiis, voluptatum soluta!
+												</p>
+											</div>
+											<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+											<button id="btn-pico" type="button" class="btn btn-primary"><i class='fas fa-shopping-cart'></i>Add to cart</button>
+											</div>
+										</div>
+									</div>
+								</div>									
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="card">
+							<img src="yamaha-2017-tokyo-motor-show-artificial-intelligence-motorcycle-3.jpg" class="card-img-top eightCardImg" class="img-fluid" alt="Yamaha">
+							<div class="card-body eightCardBody mx-auto">
+								<h5 class="card-title">Yamaha</h5>
+								<p class="card-text">Php 99, 999</p>
+								<!-- Button trigger modal -->
+								<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#yamaha-modal-center">View Details</a>
+
+								<!-- Modal -->
+								<div class="modal fade" id="yamaha-modal-center" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">Yamaha</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+											</div>
+											<div class="modal-body">
+												<p><strong>Price:</strong><span class="spanModal">Php 99,99</span></p>
+		
+												<p><strong>Details:</strong><br>
+													Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe accusamus mollitia laborum sit dolor repellendus! Corporis quidem asperiores velit placeat eos, maxime ratione. Cum explicabo aperiam recusandae. Officiis, voluptatum soluta!
+												</p>
+											</div>
+											<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+											<button id="btn-yamaha" type="button" class="btn btn-primary"><i class='fas fa-shopping-cart'></i>Add to cart</button>
+											</div>
+										</div>
+									</div>
+								</div>	
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="card">
+							<img src="set-marks-honda-cbr-650f-2016-blackred.jpg" class="card-img-top" class="img-fluid" alt="...">
+							<div class="card-body nineCardBody mx-auto">
+								<h5 class="card-title">CBR 650F</h5>
+								<p class="card-text">Php 99, 999</p>
+								<!-- Button trigger modal -->
+								<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#cbr-modal-center">View Details</a>
+
+								<!-- Modal -->								
+								<div class="modal fade" id="cbr-modal-center" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLongTitle">CBR 650F</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+											</div>
+											<div class="modal-body">
+												<p><strong>Price:</strong><span class="spanModal">Php 99,99</span></p>
+		
+												<p><strong>Details:</strong><br>
+													Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe accusamus mollitia laborum sit dolor repellendus! Corporis quidem asperiores velit placeat eos, maxime ratione. Cum explicabo aperiam recusandae. Officiis, voluptatum soluta!
+												</p>
+											</div>
+											<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+											<button id="btn-cbr" type="button" class="btn btn-primary"><i class='fas fa-shopping-cart'></i>Add to cart</button>
+											</div>
+										</div>
+									</div>
+								</div>	
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<div class="row footer">
+				<div class="col-sm-4 footer-col" >
+					<h2 class="footer-title">Motorcycle Shop</h2>
+					<p>Lorem ipsum dolor sit ametr consectetur adpscing eiusnpor incpun labore dolore magna the alquenim veniam quisnstru rcation ullamo alboris conseqrua autirure in velit esscillum.</p><br>
+					<div class="footer-icons">
+						<i class="material-icons">place</i>
+						<div>Canduman Mandaue City, Cebu</div>
+					</div>
+
+					<div class="footer-icons">
+						<i class="material-icons">local_post_office</i>
+						<div><a href="mailto:contact@archiebaclay.com" class="email-footer">Email: contact@archiebaclay.com</a></div>
+					</div>
+
+					<div class="footer-icons">
+						<i class="material-icons">local_phone</i>
+						<div><a href="tel:888-9918" class="phone-footer">Phone: (032)888-9918</a></div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 footer-col">
+						<p class="footer-title"><strong>DELIVERY NATIONWIDE</strong></p>
+					<div class="d-flex flex-row">
+						<div class="p-2">
+							<i class="material-icons boat" style="font-size: 50px">directions_boat</i>
+						</div>
+						<div class="p-2">
+							We deliver nationwide via 2go Shipping lines.
+						</div>
+					</div><br>
+
+					<div>
+						<p class="footer-title"><strong>RETURN POLICY</strong></p>
+						<div class="d-flex flex-row">
+								<div class="p-2">
+									<i class='fas fa-motorcycle' style="font-size: 50px"></i>
+								</div>
+								<div class="p-2">We have 30 days money back guarantee and a 1 year warranty.</div>
+							</div>
+					</div><br>
+
+					<div>
+						<p class="footer-title"><strong>24/7 SUPPORT</strong></p>
+						<div class="d-flex flex-row">
+							<div class="p-2">
+								<i class="material-icons"  style="font-size: 50px">local_phone</i>
+							</div>
+							<div class="p-2">
+								You can contact our customer service hotline 24/7.
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<div class="col-sm-4 footer-col">
+				<div>
+					<p class="footer-title"><strong>FOLLOW US</strong></p>
+					<a href="#" class="social-icon"><i class="fa fa-google-plus"></i></a>
+					<a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
+					<a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
+					<a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+				</div><br><br>
+
+				<div class="payment-con">
+					<p class="footer-title"><strong>WE ACCEPT</strong></p>
+					<div>We accept the payment methods below:</div>
+					<img src="https://www.archiebaclay.com/onewebstatic/Mastercard-Curved.png" alt="Master Card">
+					<img src="https://www.archiebaclay.com/onewebstatic/Visa-Curved.png" alt="Visa">
+					<img src="https://www.archiebaclay.com/onewebstatic/Paypal-Curved.png" alt="Paypal">
+					<img src="https://www.archiebaclay.com/onewebstatic/Maestro-Curved.png" alt="Maestro">
+					<img src="https://www.archiebaclay.com/onewebstatic/Western-Union-Curved.png" alt="Western Union">
+				</div><br><br>
+			</div>
+		</div>
+		
+	<script src="cart.js"></script>
+	<!-- 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	-->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html> 

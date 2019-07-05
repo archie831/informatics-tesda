@@ -1,0 +1,246 @@
+body{
+    font-size: 16px;
+    background-color:#252525;
+    line-height: 1.5;
+}
+
+/************ HEADER ************/
+
+.container, .col-sm-4{padding: 0px;}
+.nav-item .nav-link{font-size: 1.5rem !important;}
+.navLine{margin: 16px 10px 0px 10px;}
+.navbar-nav {margin-left: 80px;}
+.navRow{margin-top: 10px}
+.navbar-light .navbar-toggler {border-color:#e74c3c;background-color:#e74c3c;}
+.navbar-brand{color: #e74c3c !important;font-size: 2.5rem;}
+.navbar{border-radius: 3px;background-color:#252525 !important;}
+.nav-link{border-color: white;border: 0px 1px 0px 0px;}
+a:link, a:visited{color: white !important;}
+a:hover, a:active, .active .nav-link{color: #e74c3c !important;}
+.btn-outline-success{color: #e74c3c;border-color: #e74c3c;}
+
+.btn-outline-success:hover{
+    color: white;
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+}
+
+/************ HOME CONTENTS ************/
+
+.motorcycleshop-img{
+    background-image: url("motorycle-shop.jpg");
+    width: 100%;
+    height: auto;
+    color: white;
+    background-size: cover;
+    background-position: 0px 73%;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.motorcycleshop-img > h1, .contactImg > h1{font-size: 3.5rem;text-shadow: 5px 5px 5px #4d0000;}
+#headMargin{margin-top: 8%;}
+#headMargin-bottom{margin-bottom: 55px;}
+.carousel-inner{border-radius: 3px;}
+#myCarousel{margin-right: 10px}
+.about-us{color: whitesmoke;}
+.about-us > h2{margin-bottom: 25px}
+.carousel-img{width: 100%;height: 398px;}
+.shopMainbtn{margin-bottom: 8%;box-shadow: 3px 3px 5px #4d0000;}
+
+.aboutUs-row{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    max-width: 101.3%;
+}
+
+/************ SHOP CONTENTS ************/
+
+.oneCardImg{padding: 49px 0px 40px 0px;}    
+.oneCardBody{margin-top: 25px;}
+.twoCardImg{padding: 0px 10px 0px 10px;}
+.twoCardBody{padding-top: 0px;}
+.threeCardImg{padding: 17px 5px 11px 5px;}
+.threeCardBody{padding-top:0px}
+.fourCardImg{padding: 19px 0px 5px 0px;}
+.fiveCardBody{margin-top: 25px;}
+.sixCardImg{padding: 15px 5px 9px 5px;}
+.eightCardImg{padding: 47px 0px 20px 0px;}
+.nineCardBody{margin-top: -7px;}
+.card{margin: 15px;}
+.card-text{color: red;}
+.btn-primary{background-color:#e74c3c;}
+
+.btn-primary:link, .btn-primary:visited{
+    border-color: #e74c3c;
+    background-color:#e74c3c;
+}
+
+.btn-primary:hover, .btn-primary:active{
+    border-color: #b3291a;
+    background-color: #b3291a !important;
+    color: white !important;
+} 
+
+.btn-outline-success:active, .btn-outline-success:focus{
+    background-color: #b3291a !important;
+    border-color: #b3291a !important;
+    box-shadow: 0 0 0 0.2rem #b3291a;
+}
+
+#ex4 .p1[data-count]:after{
+    position:absolute;
+    right: 45%;
+    top:8%;
+    content: attr(data-count);
+    font-size:40%;
+    padding:.2em;
+    border-radius:50%;
+    line-height:1em;
+    color: white;
+    background:rgba(255,0,0,.85);
+    text-align:center;
+    min-width: 1em;
+    font-weight:bold;
+    }
+
+.cartText{margin-top: 25px;}
+.cartCol{margin-top: 0px;}
+.p3:hover, .p3:active{color: #b3291a}
+.showText3{color: #e74c3c !important;}
+.cartCol{color: #e74c3c;font-size: 1.3rem;}
+.p3{margin-left: -25px !important;color: #e74c3c;}
+.reset-order{font-size: 17px;top: 3px !important;}
+
+.showText,.showText2{
+    font-size: 18px;
+    color: black;
+    display: block;
+    line-height: 35px;
+}
+
+/************ CONTACT CONTENTS ************/
+
+.contactImg{
+    background-image: url("csr.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px 15%;
+    width: 100%;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-page-img{padding-left: 15px;padding-right: 15px;}
+.contactImg > h1{color: #e74c3c !important;margin: 12% 0px 12% 0px;}
+.contactForm,.contact-info, .office-location{color: white;}
+.contactForm-header{margin-bottom: 30px;}
+.contact-con{margin-top: 20px;margin-bottom: 40px;}
+.form-group {margin-bottom: 1.5rem;}
+.contact-info-icons{color: #e74c3c;}
+.contact-info-left{margin-left: 35px;}
+.office-hours{margin-top: 50px;}
+.contact-info-right{margin-left: 15%;}
+.google-map{width:100%}
+.google-map-iframe{border-radius: 3px}
+.btn-primary{border-color: #e74c3c}
+
+.office-location-row{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top:20px;
+    margin-bottom: 40px;
+}
+
+/************ MODALS ************/
+
+.spanModal{
+    color: red;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.fa-shopping-cart{margin-right: 10px}
+
+/************ FOOTER ************/
+
+.footer{
+    background-color: #e74c3c !important;
+    border-radius: 3px;
+    color: white;
+    margin: 20px 0px 30px 0px
+}
+
+.material-icons{position: relative;top: 5px;margin-right: 5px;}
+.footer > div{padding: 20px;}
+.fa-motorcycle{margin-right: 5px;}
+.footer-title{color: #252525;}
+.social-icon:hover, .social-icon:active{color: #252525 !important;}
+.payment-con > img{width: 60px;margin: 10px 30px 0px 0px;}
+.footer-icons > div{display: inline-block;margin-bottom: 10px;}
+
+.email-footer:hover, .email-footer:active, .phone-footer:hover, .phone-footer:active{
+    color: #252525 !important;
+    text-decoration: none;
+}
+.fa{
+    font-size: 30px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/************ MEDIA QUERIES ************/
+
+@media (max-width: 1200px) {
+    .oneCardBody {margin-top: 12px;}
+    .twoCardBody {padding-top: 7px;}
+    .eightCardImg {padding: 35px 0px 20px 0px;}
+    .border{display: none;}
+    .navbar-nav {margin: 0px 0px 20px 0px}
+    .nav-link{padding: 0px;}
+    .carousel-img{height: 422px}
+}
+
+@media (max-width: 992px) {
+    .oneCardBody {margin-top: 0px;}
+    .oneCardImg {padding: 31px 0px 20px 0px;}
+    .twoCardBody {padding-top: 12px;}
+    .eightCardImg{padding: 45px 0px 20px 0px;}
+    .nineCardBody {margin-top: 20px;}
+    .slider{flex-basis: auto}
+    #myCarousel {width: 102.9%;}
+    .about-us{margin-top: 40px;padding:35px}
+}
+
+@media (max-width: 576px){.slider{padding: 0px;}}
+@media (min-width: 576px) and (max-width: 768px) {
+    .oneCardImg {padding: 0px;}
+    .oneCardBody {margin-top: 26px;}
+    .twoCardBody {padding-top: 10px;}
+    .threeCardImg {padding: 17px 5px 4px 5px;}
+    .sixCardImg {padding: 1px 5px 0px 5px;}
+    .eightCardBody{margin-top: 13px;}
+    .nineCardBody {margin-top: 45px;}
+    #myCarousel {width: 103.9%;}
+    .col-sm-4 {flex: 0%;max-width: 100%;} 
+    .contactForm, .contact-info{flex-basis: auto}
+    .contact-info-right {margin-left: 0px;margin-top: 50px}
+
+    .footer-col .col-sm-4{
+        display: block !important;
+        max-width: 100%;
+        width: 100% !important;
+        flex: 0%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .card{margin: 35px 35px 0px 35px;}
+    .footer{border-radius: 0px;margin-top: 40px;}
+    .contactForm, .contact-info{flex-basis: auto}
+    .contact-info-right {margin-left: 0px;margin-top: 50px}
+}
