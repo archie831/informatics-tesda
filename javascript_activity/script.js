@@ -23,9 +23,7 @@ function save(){
     if(productValue() == "" || priceValue() == "" || quatityValue() == "" || cashValue() == ""){
         error2();
     }else if( total <= cashValue() ){
-
         var change = cashValue() - total;
-
         document.getElementById("display2").style.display = "none";
         document.getElementById("showProd").innerHTML = productValue();
         document.getElementById("showPrice").innerHTML = priceValue();
