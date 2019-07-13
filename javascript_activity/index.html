@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <label for="product">Product:</label>
+    <input type="text"id="product"><br><br>
+
+    <label for="price">Price:</label>
+    <input type="text" id="price"><br><br>
+
+    <label for="quatity">Quantity:</label>
+    <input type="text" id="quatity"><br><br>
+
+    <button id="total" onclick = "getTotal()">Get total</button><br><br>
+    <span>Total:&nbsp;</span><span id="display1"></span><br><br>
+
+    <label for="cash">Input Cash:</label>
+    <input type="text" id="cash" ><br><br>
+
+    <button id="total" onclick = "save()">Save</button><br><br>
+    <span id="display2"></span><br><br>
+    <div>Summary:</div><br>
+
+    <span>Product:&nbsp;</span><span id="showProd"></span><br><br>
+    <span>Price:&nbsp;</span><span id="showPrice"></span><br><br>
+    <span>Quantity:&nbsp;</span><span id="showQuan"></span><br><br>
+    <span>Total:&nbsp;</span><span id="showTotal"></span>
+
+<script src="script.js"></script>    
+</body>
+</html>

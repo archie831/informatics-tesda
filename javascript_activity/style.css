@@ -1,0 +1,12 @@
+
+input{
+    padding: 3px;
+    border: solid .5px black;
+    border-radius: 5px;
+}
+
+button{
+    border-radius: 5px;
+    padding: 5px;
+    background-color: skyblue;
+}
