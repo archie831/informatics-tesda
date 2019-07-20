@@ -1,0 +1,50 @@
+body{
+    margin: 0 auto;
+}
+
+.container{
+    display: inline-grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-gap: 20px;
+    
+}
+
+.item{
+    padding: 20px;
+    background-color: #7395AE;
+    border-radius: 5px;
+}
+
+.img-con{
+    width: 250px;
+
+}
+
+img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+a{
+    margin-top: 5px;
+}
+
+a:link, a:visited{
+    
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #F64C72 ;
+    color: white;
+    border-radius: 5px;
+}
+
+a:hover, a:active{
+    background-color: #b01336
+}
+
+p{
+    color: #f7f0f2;
+}
+
+b{color: black !important}
