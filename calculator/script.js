@@ -1,10 +1,8 @@
-
-
 function input1(){return Number(document.getElementById("input1").value);}
 function input2(){return Number(document.getElementById("input2").value);}
 
 //===================== ADDITION ===================== 
-    
+
 var plus = document.getElementById("plus");
 plus.addEventListener("click", function(){
     check(input1(), input2())? add(input1(), input2()): valError();

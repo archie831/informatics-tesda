@@ -1,12 +1,13 @@
 body{
-    margin: 0 auto;
+    margin: auto;
+    margin: 40px 40px;
 }
 
 .container{
     display: inline-grid;
-    grid-template-columns: 400px 400px 400px;
-    grid-gap: 20px;
-    
+    grid-template-columns: repeat(3, 30%);
+    justify-content: center;
+    grid-gap: 40px;
 }
 
 .item{
@@ -17,7 +18,7 @@ body{
 
 .img-con{
     width: 250px;
-
+    margin: auto;
 }
 
 img{
@@ -25,12 +26,7 @@ img{
     border-radius: 5px;
 }
 
-a{
-    margin-top: 5px;
-}
-
 a:link, a:visited{
-    
     font-size: 18px;
     text-decoration: none;
     padding: 10px;
@@ -39,12 +35,7 @@ a:link, a:visited{
     border-radius: 5px;
 }
 
-a:hover, a:active{
-    background-color: #b01336
-}
-
-p{
-    color: #f7f0f2;
-}
-
+a:hover, a:active{background-color: #b01336}
+p{color: #f7f0f2;}
+a{margin-top: 5px;}
 b{color: black !important}

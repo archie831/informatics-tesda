@@ -112,6 +112,10 @@ let products = [{
 
 let output = "";
 products.forEach(function(item){
+    if (item.imgUrl == undefined)
+    {
+        item.imgUrl = "https://via.placeholder.com/300"
+    }
     output += `<div class="item">
         <div class="img-con"><img src=${item.imgUrl}></div>
         <p><b>Product Name: </b>${item.pname}</p>
