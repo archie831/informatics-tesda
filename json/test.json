@@ -1,0 +1,9 @@
+{"employees": [
+    { "fname" : "Archie", "lname": "Baclay", "age" : 27, "company": "Archie's company"},
+    { "fname" : "Bill", "lname" : "Gates", "age" : 58, "company" : "Microsoft"},
+    { "fname" : "Steve", "lname" : "Jobs", "age" : 45, "company": "Apple"},
+    { "fname" : "James", "lname" : "Bond", "age" : 49, "company": "UK"},
+    { "fname" : "John", "lname" : "Doe", "age" : 65, "company": "Test company"}
+],
+    "job" : "Programmer"
+}
