@@ -9,7 +9,7 @@ let obj = {
     // OUTPUT: Window {postMessage: ƒ, blur: ƒ, focus: ƒ, close: ƒ, parent: Window, …}
 
     fullName(){
-        return `Hi! ${this.fname} ${this.lname}`
+        return `Hi! ${this.fname} ${this.lname}`    
     },
     isMarried(){
         if(this.status == "married"){return "Yes"}else{return "No"}
