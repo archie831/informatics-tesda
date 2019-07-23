@@ -8,8 +8,15 @@ let obj = {
     // fullName: () => console.log(this),
     // OUTPUT: Window {postMessage: ƒ, blur: ƒ, focus: ƒ, close: ƒ, parent: Window, …}
 
-    fullName(){
+    fullName: () => { 
+        return `Hi! ${this.fname} ${this.lname} ${this.fname}`
+        // console.log(this)
+        // Window {postMessage: ƒ, blur: ƒ, focus: ƒ, close: ƒ, parent: Window, …}
+    },
+    fullName1(){
         return `Hi! ${this.fname} ${this.lname}`    
+        // console.log(this)
+        //{fname: "John", lname: "Doe", age: 16, status: "Single", fullName: ƒ, …}
     },
     isMarried(){
         if(this.status == "married"){return "Yes"}else{return "No"}
