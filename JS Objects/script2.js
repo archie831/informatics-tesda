@@ -2,10 +2,14 @@ let obj = {
     fname : "John",
     lname : "Doe",
     age : 16,
-    status: "married",
-    fullName: () => `Hi! ${this.fname} ${this.lname} ${this.fname}`,
-    fullName: function(){
-        `Hi! ${this.fname} ${this.lname} ${this.fname}`
+    status: "Single",
+    // fullName: () => { return `Hi! ${this.fname} ${this.lname} ${this.fname}`},
+    // this keyword will not work in arrow function. this will refer to window object instead of the object literal.
+    // fullName: () => console.log(this),
+    // OUTPUT: Window {postMessage: ƒ, blur: ƒ, focus: ƒ, close: ƒ, parent: Window, …}
+
+    fullName(){
+        return `Hi! ${this.fname} ${this.lname}`
     },
     isMarried(){
         if(this.status == "married"){return "Yes"}else{return "No"}
