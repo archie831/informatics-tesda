@@ -1,0 +1,42 @@
+#box{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    display:none;
+}
+
+#box2{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    display:none;
+}
+
+.addClass{
+    background-color: red;
+    color: white;
+}
+
+.addClass2{
+    background-color: skyblue;
+}
+
+.div{
+    background-image: url("https://kids.sandiegozoo.org/sites/default/files/2017-06/animal-hero-poisonfrog_1.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 200px;   
+    height: 100px;
+    display: none;
+    margin: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.addClass3{transform: scale(1.8);}
+div{display: inline-block}
+
+
+.display{
+    color: red;
+}
